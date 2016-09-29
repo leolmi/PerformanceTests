@@ -1,0 +1,99 @@
+html {
+  background-color: #333;
+}
+body {
+  font-family: 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: whitesmoke;
+  background-color: #333;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("iconfont/MaterialIcons-Regular.eot");
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("iconfont/MaterialIcons-Regular.woff2") format("woff2"), url("iconfont/MaterialIcons-Regular.woff") format("woff"), url("iconfont/MaterialIcons-Regular.ttf") format("truetype");
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+a:link,
+a:visited,
+a:active {
+  color: rgba(218, 218, 218, 1)
+}
+
+
+
+.home {
+  padding: 50px;
+}
+h1 {
+  border-bottom: #444 1px solid;
+  padding-bottom: 10px;
+  font-size: 40px;
+  font-weight: lighter;
+  color: #777;
+}
+.home li {
+  font-size: 2em;
+  list-style: none;
+}
+.home li > a {
+  text-decoration: none;
+}
+.home li > a:hover {
+  color: yellowgreen;
+}
+.home li > p {
+  font-size: 16px;
+  margin: 10px 0 40px 40px;
+  color: #888;
+}
+
+
+
+.test-header {
+  padding: 20px;
+}
+.test-header > h1 {
+  border-bottom: #777 1px solid;
+}
+
+
+
+.test-elements {
+  padding: 20px;
+}
+.test-elements > * {
+  margin: 10px 0;
+}
+
+md-select {
+  text-transform: uppercase;
+}

@@ -1,0 +1,9 @@
+<div class="home" md-theme="{{ currentEchoTheme.angularTheme }}">
+  <h1>{{title}}</h1>
+  <ul>
+    <li ng-repeat="test in tests" >
+      <a href="" target="_blank" ui-sref="{{test.url}}">{{test.title}}</a>
+      <p>{{test.description}}</p>
+    </li>
+  </ul>
+</div>

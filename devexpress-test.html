@@ -1,0 +1,16 @@
+<div layout="column" flex>
+  <test-manager-editor manager="manager"></test-manager-editor>
+
+  <div class="test-elements" flex>
+    <div ng-repeat="el in manager.elements">
+      <div ng-switch="el.type">
+        <div ng-switch-when="grid" data-ng-attr-id="{{el.id}}" dx-data-grid="gridOptions"></div>
+        <div ng-switch-when="chart" data-ng-attr-id="{{el.id}}" dx-chart="chartOptions"></div>
+      </div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="devexpress-libraries/css/dx.common.css" />
+  <link rel="stylesheet" href="devexpress-libraries/css/dx.dark.css" />
+</div>
+
