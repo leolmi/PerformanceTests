@@ -76,6 +76,9 @@ h1 {
   color: #888;
 }
 
+md-select {
+  margin: 4px 0 8px !Important;
+}
 
 
 .test-header {
@@ -83,8 +86,20 @@ h1 {
 }
 .test-header > h1 {
   border-bottom: #777 1px solid;
+  margin-bottom: 10px;
+}
+.test-header > p {
+  margin-top: 0;
+  color: #777;
+  font-size: 14px;
+  padding: 0 50px;
+  white-space: pre-wrap;
 }
 
+.space {
+  display: inline-block;
+  width: 100px;
+}
 
 
 .test-elements {

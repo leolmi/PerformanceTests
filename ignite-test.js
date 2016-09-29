@@ -94,7 +94,12 @@ angular.module('testApp')
             }];
           };
 
-          scope.manager = new TestManager({title: 'Infragistics Widgets', customDraw:true, currentType:'grid', addAsHtmlElement:true});
+          scope.manager = new TestManager({
+            title: 'Infragistics Widgets', 
+            description:'Come i componenti Kendo anche questi, aggiungendo solo 2 grid e 2 chart, portano rapidamente a percepire una sensazione di pesantezza della pagina.\n'+
+                        'Anche in questo caso i controlli angular-material diventano da subito molto lenti e "legnosi"',
+            currentType:'grid', 
+            addAsHtmlElement:true});
           scope.manager.availableTypes = [{
             type: 'grid',
             desc: 'Griglia',

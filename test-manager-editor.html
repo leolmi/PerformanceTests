@@ -1,17 +1,18 @@
 <div class="test-manager-editor">
   <div class="test-header">
     <h1>{{manager.title}}</h1>
+    <p>{{manager.description}}</p>
     <div layout="row">
       <md-button ng-click="manager.addElement()">Add</md-button>
-      <!--<md-button ng-click="manager.toggleType()">{{manager.currentType}}</md-button>-->
       <md-select ng-model="manager.currentType">
         <md-option ng-repeat="t in manager.availableTypes" value="{{t.type}}">{{t.type}}</md-option>
       </md-select>
+      <span class="space"></span>
       <md-button ng-click="manager.removeElement()" ng-if="manager.elements.length>0">Remove Last</md-button>
       <md-button ng-click="manager.removeAll()" ng-if="manager.elements.length>0">Remove All</md-button>
       <span flex></span>
       <md-subheader ng-show="manager.elements.length">{{manager.elements.length}}: {{manager.elementsDesc}}</md-subheader>
     </div>
   </div>
-  <div class="test-elements" id="tests-elements-container" ng-if="manager.customDraw && manager.addAsHtmlElement"></div>
+  <div class="test-elements" id="tests-elements-container" ng-if="manager.addAsHtmlElement"></div>
 </div>

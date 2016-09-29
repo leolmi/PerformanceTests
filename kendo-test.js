@@ -91,7 +91,12 @@ angular.module('testApp')
               template: "#= series.name #: #= value #"
             };
           };
-          scope.manager = new TestManager({title: 'Kendo Widgets', customDraw:true, currentType:'grid', addAsHtmlElement:true});
+          scope.manager = new TestManager({
+            title: 'Kendo Widgets',
+            description:'I componenti si dimostrano più reattivi di quelli costruiti come direttive. Le prestazioni calano se confrontate con Chrome e Firefox.\n'+
+                        'A risentirne di più sembrano i controlli material come il combo che, con la presenza di un certo numero di widgets diventa lentissimo (pure avendo solo 2 item)',
+            currentType:'grid',
+            addAsHtmlElement:true});
           scope.manager.availableTypes = [{
             type: 'grid',
             desc: 'Griglia',

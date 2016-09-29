@@ -81,7 +81,12 @@ angular.module('testApp')
             }];
           };
 
-          scope.manager = new TestManager({title: 'Highcharts charts', customDraw:true, currentType:'chart', addAsHtmlElement:true});
+          scope.manager = new TestManager({
+            title: 'Highcharts charts', 
+            description:'Il grafico con le migliori prestazioni (ha anche qualche funzionalità in meno). \n'+
+                        'Quello che si evince è comunque un rallentamento di performance dei controlli angular-material',
+            currentType:'chart', 
+            addAsHtmlElement:true});
           scope.manager.availableTypes = [{
             type: 'chart',
             desc: 'Grafico',

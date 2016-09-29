@@ -15,7 +15,11 @@ angular.module('testApp')
       replace: true,
       scope: {},
       link: function (scope, ele) {
-        scope.manager = new TestManager({title: 'Dev-Express widgets', currentType:'grid', customDraw:true});
+        scope.manager = new TestManager({
+          title: 'Dev-Express widgets', 
+          currentType:'grid', 
+          description:'Inserire 2-3 griglie + 2 grafici e tutti i componenti e le widgets sembrerano come bloccate nell\'utilizzo.'+
+                      '\nLa risposta agli eventi del mouse appare ritardata con una complessiva sensazione di pagina collassata.'});
         scope.manager.availableTypes = [
           {type: 'grid', desc: 'Griglia', icon: 'view_module'},
           {type: 'chart', desc: 'Grafico', icon: 'equalizer'}
