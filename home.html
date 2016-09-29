@@ -1,7 +1,8 @@
 <div class="home" md-theme="{{ currentEchoTheme.angularTheme }}">
   <h1>{{title}}</h1>
   <ul>
-    <li ng-repeat="test in tests" >
+    <li ng-repeat="test in tests">
+      <md-icon class="material-icons">label_outline</md-icon>
       <a href="" target="_blank" ui-sref="{{test.url}}">{{test.title}}</a>
       <p>{{test.description}}</p>
     </li>
